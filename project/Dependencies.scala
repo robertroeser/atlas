@@ -12,6 +12,7 @@ object Dependencies {
     val slf4j      = "1.7.21"
     val spectator  = "0.42.0"
     val spray      = "1.3.4"
+    val proteus    = "0.4.9-SNAPSHOT"
 
     val crossScala = Seq(scala)
   }
@@ -65,4 +66,7 @@ object Dependencies {
   val sprayRouting    = "io.spray" %% "spray-routing" % spray
   val sprayTestkit    = "io.spray" %% "spray-testkit" % spray
   val typesafeConfig  = "com.typesafe" % "config" % "1.3.1"
+  val proteusClient   = "io.netifi.proteus" % "client" % proteus
+  val proteusMetrics  = "io.netifi.proteus" % "metrics" % proteus
+  val reactorScala    ="io.projectreactor" %% "reactor-scala-extensions" % "0.3.2"
 }

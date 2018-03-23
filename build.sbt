@@ -136,6 +136,9 @@ lazy val `atlas-webapi` = project
   .dependsOn(`atlas-akka`, `atlas-chart`, `atlas-core`, `atlas-json`, `atlas-test` % "test")
   .settings(libraryDependencies ++= Seq(
     Dependencies.spectatorSandbox,
+    Dependencies.proteusClient,
+    Dependencies.proteusMetrics,
+    Dependencies.reactorScala,
     Dependencies.akkaTestkit % "test",
     Dependencies.sprayTestkit % "test"
   ))
